@@ -3,7 +3,7 @@ exports.config = {
   helpers: {
     Puppeteer: {
       url: 'http://cafetownsend-angular-rails.herokuapp.com',
-      show: true,
+      show: false,
       windowSize: '1200x900'
     },
     AssertWrapper: {
