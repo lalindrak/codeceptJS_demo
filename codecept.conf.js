@@ -3,7 +3,7 @@ exports.config = {
   helpers: {
     Puppeteer: {
       url: 'http://cafetownsend-angular-rails.herokuapp.com',
-      show: false,
+      show: true,
       windowSize: '1200x900'
     },
     AssertWrapper: {
@@ -12,6 +12,9 @@ exports.config = {
     BrowserHelper: {
       require: './custom_helpers/browser_helper.js'
     }
+  },
+  chrome: {
+    args: [ "--headless", "--no-sandbox"]
   },
   include: {
     I: './steps_file.js',
