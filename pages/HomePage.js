@@ -3,7 +3,7 @@ module.exports = {
     locators: {
         lblGreetings: '#greetings',
         btnLogout: '.main-button',
-        btnCreate: '#bAdd',
+        btnCreate: "//a[@class='subButton']",
         allUsersDataGrid: "//li[@ng-repeat='employee in employees']",
         btnDelete: "//a[@id='bDelete']"
     },
