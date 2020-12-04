@@ -24,3 +24,6 @@ When('I delete the user by clicking on delete button and accepting popup',async 
     homePage.clickBtnDelete()
     await homePage.acceptPopupWindow()
 });
+// When('I grab text from all the users',async() => {
+//    await homePage.grabTextFromAll()
+// });

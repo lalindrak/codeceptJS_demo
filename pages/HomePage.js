@@ -8,6 +8,7 @@ module.exports = {
         btnDelete: "//a[@id='bDelete']"
     },
     async getLoggedInUser() {
+        I.wait(3)
         return await I.grabTextFrom(this.locators.lblGreetings)
     },
     clickBtnLogout() {
@@ -31,5 +32,11 @@ module.exports = {
     },
      acceptPopupWindow() {
         I.acceptPopup();
-    },
+    }
+    // async grabTextFromAll(){
+    //     let users = await I.grabTextFromAll(this.locators.allUsersDataGrid)
+    //     for(i=0;  i<users.length; i++){
+    //         console.log("user is ", users.toString())
+    //     }
+    // }
 }
