@@ -1,12 +1,12 @@
 exports.config = {
-  output: './output',
+  output: './allure-results',
   helpers: {
     Puppeteer: {
       url: 'http://cafetownsend-angular-rails.herokuapp.com',
       show: true,
       windowSize: '1200x900',
       chrome: {
-        args: [ "--headless", "--no-sandbox"]
+        //args: [ "--headless", "--no-sandbox"]
       }
     },
     AssertWrapper: {
