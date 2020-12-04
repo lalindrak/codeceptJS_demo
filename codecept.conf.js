@@ -6,7 +6,11 @@ exports.config = {
       show: true,
       windowSize: '1200x900',
       chrome: {
-        args: [ "--headless", "--no-sandbox"]
+        args: [
+          "--headless",
+          "--no-sandbox"
+          //"--start-maximized"
+        ]
       }
     },
     AssertWrapper: {
